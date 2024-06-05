@@ -1,4 +1,4 @@
-# Data Preparation for Code Migration Research
+# Data Preparation for Code Migration Pipeline
 
 This repository contains the data preparation process for my dissertation titled "Building a Generative Al-Powered Code Migration Pipeline for Application Modernisation". The aim of this research is to explore the capabilities of generative artificial intelligence (AI) in streamlining and enhancing code migration for application modernisation.
 
