@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wN4-aa-h8F">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="78q-wG-XQZ">
+            <objects>
+                <viewController id="wN4-aa-h8F" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p7Q-5K-OF1"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKb-LA-hKy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RWx-S4-ZGv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU2-QB-jnD">
+                                <rect key="frame" x="558" y="558" width="22" height="22"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pPj-Tf-hjw" kind="presentation" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="lCN-hv-zuu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uU2-QB-jnD" secondAttribute="trailing" constant="20" symbolic="YES" id="9KQ-3s-Ojs"/>
+                            <constraint firstAttribute="bottom" secondItem="uU2-QB-jnD" secondAttribute="bottom" constant="20" symbolic="YES" id="Gg1-5F-BWN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ho-aI-BO1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="177"/>
+        </scene>
+        <!--Flipside View Controller-->
+        <scene sceneID="BWP-qv-WaC">
+            <objects>
+                <viewController id="pPj-Tf-hjw" customClass="FlipsideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3w-cz-WqC"/>
+                        <viewControllerLayoutGuide type="bottom" id="FdH-ky-OS6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6pN-ir-PpY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-gV-YOT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="6N5-Zs-4r4">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="mgC-bC-e2w">
+                                            <connections>
+                                                <action selector="done:" destination="pPj-Tf-hjw" id="khD-CE-bAd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTP-y2-T3X">
+                                <rect key="frame" x="125" y="255" width="84" height="30"/>
+                                <state key="normal" title="Send note 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enviarNot1:" destination="pPj-Tf-hjw" eventType="touchUpInside" id="Ffy-yg-IJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-nS-rMj">
+                                <rect key="frame" x="130" y="351" width="84" height="30"/>
+                                <state key="normal" title="Send note 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enviarNot2:" destination="pPj-Tf-hjw" eventType="touchUpInside" id="GK3-Pz-9WC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fvI-gV-YOT" firstAttribute="trailing" secondItem="6pN-ir-PpY" secondAttribute="trailing" id="6To-Kv-pAk"/>
+                            <constraint firstItem="fvI-gV-YOT" firstAttribute="leading" secondItem="6pN-ir-PpY" secondAttribute="leading" id="agM-NV-fKT"/>
+                            <constraint firstItem="fvI-gV-YOT" firstAttribute="top" secondItem="6pN-ir-PpY" secondAttribute="top" id="ngo-Lf-DwH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cj-4g-4gG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="177"/>
+        </scene>
+    </scenes>
+</document>
