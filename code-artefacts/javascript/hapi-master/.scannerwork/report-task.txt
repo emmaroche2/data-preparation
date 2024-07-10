@@ -1,0 +1,6 @@
+projectKey=DissertationJS2
+serverUrl=http://localhost:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://localhost:9000/dashboard?id=DissertationJS2
+ceTaskId=f16fcdd4-ef52-424c-8219-0b011ce5d93c
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f16fcdd4-ef52-424c-8219-0b011ce5d93c
